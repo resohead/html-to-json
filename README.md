@@ -4,6 +4,7 @@ Convert HTML to JSON including open graph extraction. Note: This package does no
 - [Features](#features)
 - [Convert HTML to JSON](#convert-html-to-json)
 - [Open Graph Object](#open-graph-object)
+  - [Example](#example)
 - [Tests](#tests)
 - [Todo](#todo)
 
@@ -61,6 +62,54 @@ const parser = new Parser()
 
 const json = parser.parse(html).asJson('meta')
 return openGraph(json)
+```
+
+### Example
+
+```json
+{
+    "hybrid": {
+        "url": "https://example.com",
+        "name": "Example Site Name Meta",
+        "handle": "@organisation",
+        "title": "Example Site Title Meta",
+        "description": "This is a test meta description",
+        "type": "article",
+        "images": [
+            "https://example.com/social-image-1.jpg",
+            "https://example.com/social-image-2.jpg",
+            "https://example.com/twitter-social-image.jpg"
+        ],
+        "image": "https://example.com/social-image-2.jpg",
+        "author": "Author Name Here",
+        "authorHandle": "@handle",
+        "keywords": "HTML, CSS, JavaScript"
+    },
+    "author": "Author Name Here",
+    "description": "This is a test meta description",
+    "keywords": "HTML, CSS, JavaScript",
+    "openGraph": {
+        "images": [
+            "https://example.com/social-image-1.jpg",
+            "https://example.com/social-image-2.jpg"
+        ],
+        "title": "Example Site Title Meta",
+        "type": "article",
+        "url": "https://example.com",
+        "image": "https://example.com/social-image-2.jpg",
+        "description": "This is a test og description tag",
+        "siteName": "Example Site Name Meta"
+    },
+    "twitter": {
+        "images": ["https://example.com/twitter-social-image.jpg"],
+        "card": "twitter-card",
+        "site": "@organisation",
+        "title": "Example Site Twitter Meta",
+        "description": "This is a test og twitter description tag",
+        "creator": "@handle",
+        "image": "https://example.com/twitter-social-image.jpg"
+    }
+}
 ```
 
 ## Tests
