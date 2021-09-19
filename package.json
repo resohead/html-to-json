@@ -1,9 +1,9 @@
 {
   "name": "html-to-json",
   "version": "0.1.0",
-  "type": "module",
   "description": "Convert HTML to JSON",
-  "main": "index.js",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },

@@ -23,12 +23,16 @@ You can access remote data in a number of different ways using npm packages. For
 
 Extract specific tags directly to JSON:
 ```js
+import { Parser } from 'html-to-json'
+
 const parser = new Parser()
 parser.parse(html).asJson('meta')
 ```
 
 Convert entire document to JSON, keep only meta tags and remove redundant keys:
 ```js
+import { Parser, openGraph } from 'html-to-json'
+
 let json = parser.parse(html).asJson('*')
 let filtered = json
   .filter((element) => element.tagType === 'tag' && element.tagName === 'meta')
@@ -43,7 +47,8 @@ let filtered = json
 
 Extract Open Graph, Twitter and other meta data from HTML using the `getOpenGraphData` method on the parser:
 ```js
-const Parser = require("./parser")
+import { Parser } from 'html-to-json'
+
 const parser = new Parser()
 
 const json = parser.parse(html).getOpenGraphData()
@@ -51,12 +56,11 @@ const json = parser.parse(html).getOpenGraphData()
 
 Manually convert JSON to an Open Graph Object
 ```js
-const Parser = require("./parser")
+import { Parser, openGraph } from 'html-to-json'
 const parser = new Parser()
-const meta = require('./meta')
 
 const json = parser.parse(html).asJson('meta')
-return meta.openGraph(json)
+return openGraph(json)
 ```
 
 ## Tests

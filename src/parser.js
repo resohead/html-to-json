@@ -1,5 +1,5 @@
-const cheerio = require("cheerio");
-const meta = require('./meta')
+import cheerio from 'cheerio'
+import meta from './meta.js'
 
 class Parser {
     constructor(options = {}) {
@@ -54,4 +54,4 @@ class Parser {
     }
 }
 
-module.exports = Parser;
+export default Parser

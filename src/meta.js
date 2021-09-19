@@ -1,4 +1,4 @@
-const { camelCase } = require('./utilities')
+import { camelCase } from './utilities.js'
 /**
  * Convert array of nodes to open graph object
  */
@@ -70,6 +70,4 @@ function openGraph(meta) {
     };
 }
 
-module.exports = {
-    openGraph
-};
+export default openGraph

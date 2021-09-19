@@ -1,7 +1,4 @@
 import Parser from './parser.js'
-import {meta} from './meta.js'
+import openGraph from './meta.js'
 
-export default {
-    Parser,
-    meta
-};
+export { Parser, openGraph }

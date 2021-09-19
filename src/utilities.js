@@ -24,7 +24,7 @@ function camelCase(str){
         .join('')
 }
 
-module.exports = {
+export {
     ucfirst,
     lcfirst,
     separate,
