@@ -1,4 +1,4 @@
-const utilities = require('../src/utilities')
+import { camelCase } from '../src/utilities.js'
 
 const words = [
     {input: 'site_name', output: 'siteName'},
@@ -11,7 +11,7 @@ describe.each(words)(`A JSON key`, (word) => {
     it(`${word.input} should be converted to ${word.output}`, () => {
 
         expect(
-            utilities.camelCase(word.input)
+            camelCase(word.input)
         )
         .toEqual(word.output);
     });

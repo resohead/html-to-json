@@ -1,6 +1,5 @@
-const fs = require("fs").promises
-const meta = require('../src/meta')
-const Parser = require("../src/parser")
+import fs from "fs/promises"
+import Parser from '../src/parser.js'
 
 const files = [
     'head',

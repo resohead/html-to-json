@@ -1,6 +1,5 @@
-const fs = require("fs").promises
-const meta = require('../src/meta')
-
+import fs from "fs/promises"
+import openGraph from '../src/meta.js'
 
 const files = [
     'meta.json',
@@ -14,7 +13,7 @@ describe.each(files)(`meta tag arrays`, (file) => {
         const expected = await fs.readFile(`tests/fixtures/expected/${file}`, "binary");
 
         expect(
-            meta.openGraph(JSON.parse(input))
+            openGraph(JSON.parse(input))
         )
         .toEqual(JSON.parse(expected));
     });

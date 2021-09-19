@@ -1,5 +1,5 @@
 import cheerio from 'cheerio'
-import meta from './meta.js'
+import openGraph from './meta.js'
 
 class Parser {
     constructor(options = {}) {
@@ -24,7 +24,7 @@ class Parser {
     }
 
     getOpenGraphData(){
-        return meta.openGraph(this.asJson('meta'))
+        return openGraph(this.asJson('meta'))
     }
 
     getNodes(selector = "*") {
