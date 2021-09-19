@@ -1,6 +1,5 @@
 {
   "name": "@resohead/html-to-json",
-
   "version": "0.1.0",
   "description": "Convert HTML to JSON",
   "main": "src/index.js",
@@ -9,6 +8,10 @@
     "test": "jest"
   },
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/resohead/html-to-json.git"
+  },
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.10"
