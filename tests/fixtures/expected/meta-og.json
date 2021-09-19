@@ -1,0 +1,33 @@
+{
+    "hybrid": {
+        "url": "https://example.com",
+        "handle": null,
+        "title": "Example Site Title Meta",
+        "name": "Example Site Name Meta",
+        "description": "This is a test og description tag",
+        "type": "article",
+        "images": [
+            "https://example.com/social-image-1.jpg",
+            "https://example.com/social-image-2.jpg"
+        ],
+        "image": "https://example.com/social-image-2.jpg",
+        "author": null,
+        "authorHandle": null,
+        "keywords": null
+    },
+    "openGraph": {
+        "images": [
+            "https://example.com/social-image-1.jpg",
+            "https://example.com/social-image-2.jpg"
+        ],
+        "title": "Example Site Title Meta",
+        "type": "article",
+        "url": "https://example.com",
+        "image": "https://example.com/social-image-2.jpg",
+        "description": "This is a test og description tag",
+        "siteName": "Example Site Name Meta"
+    },
+    "twitter": {
+        "images": []
+    }
+}

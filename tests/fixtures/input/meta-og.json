@@ -1,0 +1,19 @@
+[
+    { "charset": "utf-8" },
+    { "property": "og:title", "content": "Example Site Title Meta" },
+    { "property": "og:type", "content": "article" },
+    { "property": "og:url", "content": "https://example.com" },
+    {
+        "property": "og:image",
+        "content": "https://example.com/social-image-1.jpg"
+    },
+    {
+        "property": "og:image",
+        "content": "https://example.com/social-image-2.jpg"
+    },
+    {
+        "property": "og:description",
+        "content": "This is a test og description tag"
+    },
+    { "property": "og:site_name", "content": "Example Site Name Meta" }
+]

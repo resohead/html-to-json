@@ -1,0 +1,29 @@
+{
+    "hybrid": {
+        "url": null,
+        "handle": "@organisation",
+        "title": "Example Site Twitter Meta",
+        "name": null,
+        "description": "This is a test og twitter description tag",
+        "type": "website",
+        "images": [
+            "https://example.com/twitter-social-image.jpg"
+        ],
+        "image": "https://example.com/twitter-social-image.jpg",
+        "author": "@handle",
+        "authorHandle": "@handle",
+        "keywords": null
+    },
+    "openGraph": {
+        "images": []
+    },
+    "twitter": {
+        "images": ["https://example.com/twitter-social-image.jpg"],
+        "card": "twitter-card",
+        "site": "@organisation",
+        "title": "Example Site Twitter Meta",
+        "description": "This is a test og twitter description tag",
+        "creator": "@handle",
+        "image": "https://example.com/twitter-social-image.jpg"
+    }
+}
